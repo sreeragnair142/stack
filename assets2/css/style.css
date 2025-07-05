@@ -18,7 +18,7 @@
     --th-border-color3: rgba(87, 88, 95, 0.5);
     --th-border-color4: rgba(198, 201, 212, 0.5);
     --light-color: #C6C9D4;
-    --gray-color: #09093a;
+    --gray-color: #03032a;
     --gray-color2: #F4F3E6;
     --gray-color3: #A1A1A1;
     --gray-color4: #F4F1FC;
@@ -25781,4 +25781,51 @@ span.select2-selection.select2-selection--single:focus {
     .space-extra2-bottom {
         padding-bottom: calc(var(--section-space-mobile) - 30px)
     }
+}
+
+ .back-to-aed-container {
+    position: fixed;
+    bottom: 120px;
+    right: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.back-to-aed-container.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-aed-arrow {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #1d3557;
+    padding: 10px 16px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-aed-arrow:hover {
+    background-color: #27496d;
+    transform: translateY(-4px);
+}
+
+.arrow-icon {
+    font-size: 16px;
+    color: white;
+}
+
+.back-to-aed-text {
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
 }
